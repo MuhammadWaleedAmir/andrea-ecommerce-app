@@ -2,6 +2,7 @@ import 'package:ecommerce_app/src/features/products/domain/product.dart';
 import 'package:ecommerce_app/src/features/reviews/domain/review.dart';
 import 'package:ecommerce_app/src/utils/delay.dart';
 import 'package:ecommerce_app/src/utils/in_memory_store.dart';
+import 'package:riverpod/riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'fake_reviews_repository.g.dart';
@@ -81,11 +82,11 @@ class FakeReviewsRepository {
 }
 
 @Riverpod(keepAlive: true)
-FakeReviewsRepository reviewsRepository(ReviewsRepositoryRef ref) {
+FakeReviewsRepository reviewsRepository(Ref ref) {
   return FakeReviewsRepository();
 }
 
 @riverpod
-Stream<List<Review>> productReviews(ProductReviewsRef ref, ProductID id) {
+Stream<List<Review>> productReviews(Ref ref, ProductID id) {
   return ref.watch(reviewsRepositoryProvider).watchReviews(id);
 }

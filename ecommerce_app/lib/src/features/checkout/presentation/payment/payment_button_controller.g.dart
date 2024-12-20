@@ -7,7 +7,7 @@ part of 'payment_button_controller.dart';
 // **************************************************************************
 
 String _$paymentButtonControllerHash() =>
-    r'32af9b54f0a19136e29fc2e868b1bf9e903976e8';
+    r'9653769d4b0443de189066af1a62981bcf6ec9ae';
 
 /// See also [PaymentButtonController].
 @ProviderFor(PaymentButtonController)
@@ -24,4 +24,4 @@ final paymentButtonControllerProvider =
 
 typedef _$PaymentButtonController = AutoDisposeAsyncNotifier<void>;
 // ignore_for_file: type=lint
-// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member
+// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

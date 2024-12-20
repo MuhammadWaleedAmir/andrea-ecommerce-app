@@ -73,6 +73,6 @@ class FakeCheckoutService {
 }
 
 @riverpod
-FakeCheckoutService checkoutService(CheckoutServiceRef ref) {
+FakeCheckoutService checkoutService(Ref ref) {
   return FakeCheckoutService(ref);
 }
